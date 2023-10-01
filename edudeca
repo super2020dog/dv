@@ -48,12 +48,14 @@ local function toggleMinimize()
         frame.Size = originalSize
         button1.Visible = true -- Mostrar o botão 1 (West X)
         button2.Visible = true -- Mostrar o botão 2 (Auto Mine)
+        button3.Text = "-" -- Alterar o texto do botão 3 para "-"
         isMinimized = false
     else
         originalSize = frame.Size
         frame.Size = UDim2.new(0.1, 0, 0.1, 0)
         button1.Visible = false -- Ocultar o botão 1 (West X)
         button2.Visible = false -- Ocultar o botão 2 (Auto Mine)
+        button3.Text = "+" -- Alterar o texto do botão 3 para "+"
         isMinimized = true
     end
 end
